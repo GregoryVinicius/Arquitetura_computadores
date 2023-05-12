@@ -1,0 +1,91 @@
+000001 sub
+
+sub r7, r7, r2
+
+formato = r = 0
+opcode 000001
+destino = 111
+operador1 = 111
+operador2 = 010
+
+instrução 0 000001 111 111 010
+
+******************************
+
+Mov r0, 129
+
+formato = i = 1
+opcode = 11
+registrador = 000
+imediato = 0010000001
+
+1 11 000 00 1000 0001
+
+******************************
+
+Mov r5, 1
+
+formato = 1
+opcode = 11
+registrador = 101
+imediato = 00 0000 0001
+
+1 11 101 00 0000 0001
+
+*******************************
+
+And r0, r0, r5
+
+formato = 0
+opcode = 001010
+destino = 000
+operador 1 = 000
+operador 2 = 101
+
+instrução = 0 001010 000 000 101
+
+*******************************
+
+Jump_cond r0, 48
+
+formato = 1
+opcode = 01
+registrador = 000
+imediato = 00 0011 0000
+
+1 01 000 00 0011 0000
+
+********************************
+
+add r5, r5, r5
+
+formato = 0
+opcode = 00 0000
+destino = 101
+operador 1 = 101
+operador 2 = 101
+
+0 00 0000 101 101 101
+
+********************************
+
+Load r2, [r4]
+
+formato = 0
+opcode = 00 1111
+destino = 010
+operador 1 = 100
+operador 2 = 000
+
+0 00 1111 010 100 000
+
+**********************************
+
+Jump 50
+
+formato = 1
+opcode = 00
+registrador = 000
+imediato = 00 0011 0010
+
+1 00 000 00 0011 0010
